@@ -1,0 +1,91 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+
+body {
+  background-image: url("../images/bg-image-tile-2.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  margin: 2em auto;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 50%;
+    .logo {
+      width: 60px;
+      align-self: flex-start;
+    }
+    .hamburger-menu {
+      width: 60px;
+      align-self: flex-end;
+    }
+  }
+
+}
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+
+/* Smaller than mobile */
+@media (max-width: 400px) {}
+
+/* Smaller than phablet (also point when grid becomes active) */
+@media (max-width: 550px) {}
+
+/* Smaller than tablet */
+@media (max-width: 750px) {
+  nav {
+    div {
+      .logo {
+        width: 45px;
+      }
+      .hamburger-menu {
+        width: 45px;
+      }
+    }
+  }
+}
+
+/* Smaller than desktop */
+@media (max-width: 1000px) {}
+
+/* Smaller than Desktop HD */
+@media (max-width: 1200px) {}

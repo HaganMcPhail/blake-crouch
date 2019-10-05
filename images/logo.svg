@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="74px" viewBox="0 0 60 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HOME" transform="translate(-250.000000, -50.000000)" fill="#027AFF">
+            <path d="M280.510949,50 L280.510423,79.599 L295.255474,79.6 L295.255474,79.6 L310,79.6 L309.999,99.041 L295.255,99.041 L295.255474,94.4 L280.510423,94.399 L280.510423,109.199 L295.255423,109.199 L295.255,104.295 L309.999,104.295 L310,124 L280.510423,123.999 L280.510949,124 L265.766423,124 L265.766423,50 L280.510949,50 Z M254.729064,52.072 L263.004926,107.72 L250,54.292 L254.729064,52.072 Z M263.078261,50.0398503 L263.004926,93.66 L257.133031,51.3519399 L263.078261,50.0398503 Z" id="logo"></path>
+        </g>
+    </g>
+</svg>
