@@ -1,29 +1,12 @@
-/*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/29/2014
-*/
-
-
-/* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-- Grid
-- Base Styles
-- Typography
-- Links
-- Buttons
-- Forms
-- Lists
-- Code
-- Tables
-- Spacing
-- Utilities
-- Clearing
-- Media Queries
-*/
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: blue;
+}
 
 body {
   background-image: url("../images/bg-image-tile-2.png");
@@ -39,30 +22,53 @@ nav {
   div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex-basis: 50%;
     .logo {
+      z-index: 999;
       width: 60px;
       align-self: flex-start;
+      margin-left: 2em;
     }
     .hamburger-menu {
+      z-index: 999;
       width: 60px;
       align-self: flex-end;
+      margin-right: 2em;
     }
   }
 
 }
 
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container {
-  position: relative;
+main {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
-
+  .col {
+    z-index: 998;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    .left-col {
+      flex-basis: 30%;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      margin-top: calc(-4em - 76px);
+      background-color: #D8D8D8;
+      padding: 50vh 3em 3em 3em;
+    }
+    .right-col {
+      flex-basis: 30%;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-end;
+      margin-top: calc(-4em - 76px);
+      background-color: red;
+      padding: 50vh 3em 3em 3em;
+    }
+  }
+}
 
 /* Smaller than mobile */
 @media (max-width: 400px) {}
