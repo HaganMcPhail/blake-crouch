@@ -1,7 +1,6 @@
 .container {
   position: relative;
   width: 100%;
-  min-height: 100vh;
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
@@ -14,72 +13,81 @@ body {
   background-attachment: fixed;
 }
 
-nav {
-  .logo {
-    position: absolute;
-    top: 2em;
-    left: 2em;
-    z-index: 999;
-    width: 60px;
-  }
-  .hamburger-menu {
-    position: absolute;
-    top: 2em;
-    right: 2em;
-    z-index: 999;
-    width: 60px;
+.nav-parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  .nav-container {
+    margin: 0 auto;
+    max-width: 960px;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem 3rem;
+      .logo {
+        align-self: center;
+        width: 60px;
+      }
+      .menu {
+        align-self: center;
+        width: 60px;
+      }
+    }
   }
 }
 
 main {
   width: 100%;
-  .left-col {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 45%;
-    height: 75vh;
-    background-color: #D8D8D8;
-    .hero-text {
-      h2 {
-        font-size: 3em;
+  section.hero {
+    display: flex;
+    justify-content: space-between;
+    .left-col {
+      display: flex;
+      align-items: flex-end;
+      width: 45%;
+      height: 75vh;
+      background-color: #D8D8D8;
+      .hero-text {
+        h2 {
+          font-size: 3em;
+        }
+        p {
+          font-size: 1.2em;
+          line-height: 1.3em;
+        }
+        padding: 3vh 3em 3vh 3em;
       }
-      p {
-        font-size: 1.2em;
-        line-height: 1.3em;
+    }
+    .right-col {
+      display: flex;
+      align-items: flex-end;
+      width: 45%;
+      height: 100vh;
+      .right-col-img {
+        width: 100%;
+        img {
+          z-index: 987;
+          width: 100%;
+          margin: 0px auto;
+        }
       }
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      padding: 3vh 3em 10vh 3em;
+      .right-col-bg {
+        z-index: 986;
+        width: 100%;
+        background-color: #D8D8D8;
+        width: 100%;
+        //padding: 40vh 3em 3em 3em;
+      }
     }
   }
-  .right-col {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 98vh;
-    text-align: center;
-    .right-col-img {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 100%;
-      img {
-        z-index: 987;
-        width: 100%;
-        margin: 0px auto;
-      }
-    }
-    .right-col-bg {
-      z-index: 986;
-      width: 100%;
-      background-color: #D8D8D8;
-      width: 100%;
-      //padding: 40vh 3em 3em 3em;
+  section.reviews {
+    padding: 3rem 1.5rem;
+    margin-top: -5px;
+    background-color: #D8D8D8;
+    .reviews-container {
+      display: flex;
+      align-items: flex-start;
     }
   }
 }
@@ -91,18 +99,7 @@ main {
 @media (max-width: 550px) {}
 
 /* Smaller than tablet */
-@media (max-width: 750px) {
-  nav {
-    div {
-      .logo {
-        width: 45px;
-      }
-      .hamburger-menu {
-        width: 45px;
-      }
-    }
-  }
-}
+@media (max-width: 750px) {}
 
 /* Smaller than desktop */
 @media (max-width: 1000px) {}

@@ -1,7 +1,6 @@
 .container {
   position: relative;
   width: 100%;
-  min-height: 100vh;
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
@@ -12,80 +11,83 @@ body {
   background-repeat: repeat;
   background-attachment: fixed;
 }
-nav .logo {
-  position: absolute;
-  top: 2em;
-  left: 2em;
-  z-index: 999;
+.nav-parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.nav-parent .nav-container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.nav-parent .nav-container nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+}
+.nav-parent .nav-container nav .logo {
+  align-self: center;
   width: 60px;
 }
-nav .hamburger-menu {
-  position: absolute;
-  top: 2em;
-  right: 2em;
-  z-index: 999;
+.nav-parent .nav-container nav .menu {
+  align-self: center;
   width: 60px;
 }
 main {
   width: 100%;
 }
-main .left-col {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
+main section.hero {
+  display: flex;
+  justify-content: space-between;
+}
+main section.hero .left-col {
+  display: flex;
+  align-items: flex-end;
   width: 45%;
   height: 75vh;
   background-color: #D8D8D8;
 }
-main .left-col .hero-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 3vh 3em 10vh 3em;
+main section.hero .left-col .hero-text {
+  padding: 3vh 3em 3vh 3em;
 }
-main .left-col .hero-text h2 {
+main section.hero .left-col .hero-text h2 {
   font-size: 3em;
 }
-main .left-col .hero-text p {
+main section.hero .left-col .hero-text p {
   font-size: 1.2em;
   line-height: 1.3em;
 }
-main .right-col {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 0;
+main section.hero .right-col {
+  display: flex;
+  align-items: flex-end;
   width: 45%;
-  height: 98vh;
-  text-align: center;
+  height: 100vh;
 }
-main .right-col .right-col-img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+main section.hero .right-col .right-col-img {
   width: 100%;
 }
-main .right-col .right-col-img img {
+main section.hero .right-col .right-col-img img {
   z-index: 987;
   width: 100%;
   margin: 0px auto;
 }
-main .right-col .right-col-bg {
+main section.hero .right-col .right-col-bg {
   z-index: 986;
   background-color: #D8D8D8;
   width: 100%;
 }
+main section.reviews {
+  padding: 3rem 1.5rem;
+  margin-top: -5px;
+  background-color: #D8D8D8;
+}
+main section.reviews .reviews-container {
+  display: flex;
+  align-items: flex-start;
+}
 /* Smaller than mobile */
 /* Smaller than phablet (also point when grid becomes active) */
 /* Smaller than tablet */
-@media (max-width: 750px) {
-  nav div .logo {
-    width: 45px;
-  }
-  nav div .hamburger-menu {
-    width: 45px;
-  }
-}
 /* Smaller than desktop */
 /* Smaller than Desktop HD */
